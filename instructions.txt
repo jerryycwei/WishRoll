@@ -1,0 +1,12 @@
+To compile and run our project,
+
+ -  Open "\WishlistApp-master\WishlistApp\WishlistApp.sln" using Visual Studio 2013 Ultimate or Professional.
+
+ -  Open "\WishlistApp-master\WishlistApp\WishlistApp\Web.config" as an XML file, and inside the node /configuration/connectionStrings/, replace the two <add> nodes with the following 2 lines of code:
+        <add name="DefaultConnection" connectionString="Data Source=salal.arvixe.com;Initial Catalog=cs307proj-data;User ID=cs307proj-db-release;Password=sauerkraut;MultipleActiveResultSets=True" providerName="System.Data.SqlClient" />
+        <add name="WishlistContext" connectionString="metadata=res://*/Models.WishlistEntities.csdl|res://*/Models.WishlistEntities.ssdl|res://*/Models.WishlistEntities.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=salal.arvixe.com;Initial Catalog=cs307proj-data;User ID=cs307proj-db-release;Password=sauerkraut;App=EntityFramework;MultipleActiveResultSets=True&quot;" providerName="System.Data.EntityClient" />
+
+ -  Compile the project by pressing Ctrl + Shift + B (or click Build >> Build Solution).
+
+ -  Run the project. A localhost server will be automatically set up and a browser will automatically pop out with the compiled website.
+
